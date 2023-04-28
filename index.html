@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    <link rel="stylesheet" href="assets/slick.css">
+    <link rel="stylesheet" href="assets/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <div class="fir-head">
+            <div class="main-text">
+                Free Carbon Neutral Shipping | 60 Day Returns | 100 Day Mattress
+            </div>
+            <div class="main-items">
+                <ul class="main-list-items">
+                    <li class="main-item aboutus active">About Us</li>
+                    <li class="main-item sustainability">Sustainability</li>
+                    <li class="main-item trade">Trade</li>
+                    <li class="main-item design">Design Services</li>
+                    <li class="main-item stores">Stores</li>
+                    <li class="main-item blog">Blog</li>
+                    <li class="main-item lang">
+                        <select name="lang" id="language">
+                            <option value="english" selected>US</option>
+                            <option value="arabic">AR</option>
+                        </select>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <div class="sec-head">
+            <div class="offcanvas-btn">
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/imgs/logo/LOGO.svg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="search" name="searchparachute" placeholder="Search Parachute">
+                <img src="assets/icons-/Vector.svg" alt="searchIcon">
+            </div>
+            <div class="links-item">
+                <div class="fav-icon">
+                    <img src="assets/icons-/fi-rr-heart.svg" alt="heartIcon">
+                </div>
+                <div class="user">
+                    <img src="assets/icons-/fi-rr-user.svg" alt="user">
+                    <a href="#">
+                        My Account
+                    </a>
+                </div>
+                <div class="shopping-cart-icon">
+                    <img src="assets/icons-/fi-rr-shopping-cart.svg" alt="shoppingCartIcon">
+                    <a href="#">
+                        Shopping Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="thr-head">
+            <i class="fa fa-close"></i>
+            <div class="search-box">
+                <input type="search" name="searchparachute" placeholder="Search Parachute">
+                <img src="assets/icons-/Vector.svg" alt="searchIcon">
+            </div>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="nav-item">
+                        <span class="item-title">
+                            Bedding
+                        </span>
+                        <img src="assets/icons-/Vector (1).svg">
+                    </li>
+                    <li class="nav-item">
+                        <span class="item-title">
+                            Inserts
+                        </span>
+                        <img src="assets/icons-/Vector (1).svg">
+                    </li>
+                    <li class="nav-item">
+                        <span class="item-title">
+                            Bath
+                        </span>
+                        <img src="assets/icons-/Vector (1).svg">
+                    </li>
+                    <li class="nav-item">
+                        <span class="item-title">
+                            Robes + Loungewear
+                        </span>
+                        <img src="assets/icons-/Vector (1).svg">
+                    </li>
+                    <li class="nav-item">
+                        <span class="item-title">
+                            Furniture
+                        </span>
+                        <img src="assets/icons-/Vector (1).svg">
+                    </li>
+                    <li class="nav-item">
+                        <span class="item-title">
+                            Decor + Living
+                        </span>
+                        <img src="assets/icons-/Vector (1).svg">
+                    </li>
+                    <li class="nav-item">
+                        <span class="item-title">
+                            Featured
+                        </span>
+                        <img src="assets/icons-/Vector (1).svg">
+                    </li>
+                    <li class="nav-item">
+                        <span class="item-title">
+                            Last Chance
+                        </span>
+                        <img src="assets/icons-/Vector (1).svg">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-section">
+            <div class="fir-main-col">
+                <div class="fir-section">
+                    <div class="tab-gallery">
+                        <div class="container-gallery">
+                            <img src="assets/imgs/gallery/brushed-cotton-venice-set_bone_lightbox_15632 1.svg" id="expandedImg" style="width:100%">
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                              <img src="assets/imgs/gallery/275511044_3426685490788962_1008602672280075216_n 1.svg" style="width:100%" onclick="tabGallry(this);">
+                            </div>
+                            <div class="column">
+                              <img src="assets/imgs/gallery/brushed-cotton-duvet-cover_bone_lightbox_15608 2.svg" style="width:100%" onclick="tabGallry(this);">
+                            </div>
+                            <div class="column">
+                              <img src="assets/imgs/gallery/brushed-cotton-venice-set_bone_lightbox_15632 3.svg" style="width:100%" onclick="tabGallry(this);">
+                            </div>
+                            <div class="column">
+                              <img src="assets/imgs/gallery/linen-venice-set_melon_lightbox_7914 2.svg" style="width:100%" onclick="tabGallry(this);">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inf-gallery">
+                        <h2>
+                            Brushed Cotton Venice Set
+                        </h2>
+                        <div class="rate">
+                            <div class="rate-stars">
+                                <img src="assets/icons-/star.svg" class="checked">
+                                <img src="assets/icons-/star.svg" class="checked">
+                                <img src="assets/icons-/star.svg" class="checked">
+                                <img src="assets/icons-/star (1).svg">
+                                <img src="assets/icons-/star (1).svg">
+                            </div>
+                            <div class="rate-caption">
+                                <p class="caption">
+                                    <span>5</span>
+                                     on 
+                                    <span>22</span>
+                                    reviwes
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-inf">
+                            <p class="main-inf">
+                                Protect your duvet insert while keeping cozy; this cover feels as good as it looks. Crafted in Portugal from 100% premium, certified long-staple Egyptian cotton – our percale sheets are lightweight and durable with a crisp finish that only gets better with time.
+                            </p>
+                            <br>
+                            <h5>
+                                What's Included:
+                            </h5>
+                            <br>
+                            <p class="includ-inf">
+                                <span>
+                                    1 x Duvet Cover
+                                </span>
+                                <br>
+                                <span>
+                                    1 x Sham Set
+                                </span>
+                            </p>
+                        </div>
+                        <div class="product-color">
+                            <h5>
+                                color
+                            </h5>
+                            <div class="colors-list">
+                                <button class="color-btn active" role="button">
+                                    <svg viewBox="0 0 250 250" height="22px" width="22px">
+                                      <circle cy="125" cx="125" r="110" fill="#FFFFFF"></circle>
+                                    </svg>
+                                  </button>
+                                  <button class="color-btn" role="button">
+                                    <svg viewBox="0 0 250 250" height="22px" width="22px">
+                                      <circle cy="125" cx="125" r="110" fill="#0aa"></circle>
+                                    </svg>
+                                  </button>
+                                  <button class="color-btn" role="button">
+                                    <svg viewBox="0 0 250 250" height="22px" width="22px">
+                                      <circle cy="125" cx="125" r="110" fill="#888"></circle>
+                                    </svg>
+                                  </button>
+                                  <button class="color-btn" role="button">
+                                    <svg viewBox="0 0 250 250" height="22px" width="22px">
+                                      <circle cy="125" cx="125" r="110" fill="#ec1"></circle>
+                                    </svg>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-section">
+                    <div class="tab-links">
+                        <button class="tablink" onclick="openPage('About', this)">About</button>
+                        <button class="tablink" onclick="openPage('Details', this)">Details</button>
+                        <button class="tablink" onclick="openPage('Materials', this)">Materials + Care</button>
+                        <button class="tablink" onclick="openPage('Shipping', this)">Shipping + Returns</button>
+                        <button class="tablink" onclick="openPage('Reviews', this)" id="defaultOpen">Reviews</button>
+                    </div>
+                    <div id="Reviews" class="tab-content">
+                        <div class="cus-review">
+                            <div class="cus-data">
+                                <div class="per-data">
+                                    <div class="per-img">
+                                        <img src="assets/imgs/Rectangle 219.svg" alt="picture of customer">
+                                    </div>
+                                    <div class="title">
+                                        <h3>Ahmed Mohamed</h3>
+                                        <p class="rev-date">24 January 2023</p>
+                                    </div>
+                                </div>
+                                <div class="cus-rate">
+                                    <img src="assets/icons-/star.svg" class="checked">
+                                    <img src="assets/icons-/star.svg" class="checked">
+                                    <img src="assets/icons-/star.svg" class="checked">
+                                    <img src="assets/icons-/star (1).svg">
+                                    <img src="assets/icons-/star (1).svg">
+                                </div>
+                            </div>
+                            <div class="comment">
+                                Changing our bedroom from blues to earth tones. The raisin duvet cover goes perfectly with other earth tones. Love the feel of percale and how it keeps me cool as a hot sleeper.
+                            </div>
+                        </div>
+                        <div class="cus-review">
+                            <div class="cus-data">
+                                <div class="per-data">
+                                    <div class="per-img">
+                                        <img src="assets/imgs/image 10.svg" alt="picture of customer">
+                                    </div>
+                                    <div class="title">
+                                        <h3>Khalid Mohammed</h3>
+                                        <p class="rev-date">15 January 2023</p>
+                                    </div>
+                                </div>
+                                <div class="cus-rate">
+                                    <img src="assets/icons-/star.svg" class="checked">
+                                    <img src="assets/icons-/star.svg" class="checked">
+                                    <img src="assets/icons-/star.svg" class="checked">
+                                    <img src="assets/icons-/star (1).svg">
+                                    <img src="assets/icons-/star (1).svg">
+                                </div>
+                            </div>
+                            <div class="comment">
+                                These sheets made such a difference for me. Even if you sleep hot, you wont sweat with the moisture wicking. Just buy them!
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <button class="pagination-btn" disabled>
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+                            <div class="pagination-links">
+                                <a href="#" class="link">1</a>
+                                <a href="#" class="link">2</a>
+                                <a href="#" class="link active">3</a>
+                                <a href="#" class="link">4</a>
+                                <a href="#" class="link">5</a>
+                                <a href="#" class="link">6</a>
+                            </div>
+                            <button class="pagination-btn" disabled>
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <br>
+                        <h1 class="title-rev">
+                            Write A Review
+                        </h1>
+                        <div class="reviews-details">
+                            <div class="details">
+                                <div class="review-rata">
+                                    <label for="rate-select">Review Stars</label>
+                                    
+                                    <select id="rate-select">
+                                        <option value="5 Stars Rating" selected>5 Stars Rating</option>
+                                        <option value="4 Stars Rating">4 Stars Rating</option>
+                                        <option value="3 Stars Rating">3 Stars Rating</option>
+                                        <option value="2 Stars Rating">2 Stars Rating</option>
+                                        <option value="1 Star Rating">1 Star Rating</option>
+                                    </select>
+                                </div>
+                                <div class="review-name">
+                                    <label for="name">your name</label>
+                                    <input type="text" name="name" id="name" placeholder="your name">
+                                </div>
+                                <div class="review-email">
+                                    <label for="e-mail">email address</label>
+                                    <input type="email" name="email" id="email" placeholder="email address">
+                                </div>
+                            </div>
+                            <div class="review-comment">
+                                <label for="rev-comment">your review</label>
+                                <input type="text" name="rev-comment" id="rev-comment">
+                            </div>
+                            <button type="submit" class="post-btn">
+                                Post Your Review
+                            </button>
+                        </div>
+                    </div>
+                    <div id="About" class="tab-content"></div>
+                    <div id="Details" class="tab-content"></div>
+                    <div id="Materials" class="tab-content"></div>
+                    <div id="Shipping" class="tab-content"></div>
+                </div>
+            </div>
+    
+            <div class="sec-main-col">
+                <section class="fir-section">
+                    <div class="price">
+                        <div class="currncy">
+                            <p class="currncy-num">$1,499.00</p>
+                            <p class="about-stock"> <span>in stock</span></p>
+                        </div>
+                        <div class="about-currncy">
+                            As low as $33 every 2 weeks with Affirm.
+                            <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h3>Size: Twin XL</h3>
+                        <div class="sizes-btns">
+                            <button class="size-btn unavailable">Twin</button>
+                            <button class="size-btn active">Twin XL</button>
+                            <button class="size-btn">Full</button>
+                            <button class="size-btn">Queen</button>
+                            <button class="size-btn">King</button>
+                            <button class="size-btn">Cal King</button>
+                        </div>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="num-of-product">
+                            <button class="minus">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                            <input type="number" name="numOfProduct" id="numOfProduct" value="1" min="0">
+                            <button class="plus">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="addToCart-btn">
+                            <span>add to cart</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec-section">
+                    <div class="about-ourProducts">
+                        <h2><span>Plush Perfection</span></h2>
+                        <div>
+                            <img src="assets/icons-/IMAGE.svg" width="90px" height="80px">
+                            <p>
+                                <span>See it in Person</span>
+                                <a href="#">find a store</a>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="assets/icons-/Group.svg" width="90px" height="80px">
+                            <p>
+                                <span>Oeko-Tex certified</span>
+                                <a href="#">Learn more</a>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="assets/icons-/Clip path group.svg" width="90px" height="80px">
+                            <p>
+                                <span>Climate Neutral <br> Shipping + Returns</span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="new-arrivals">
+            <div class="title">
+                <h2>new arrivals</h2>
+                <div class="control-btns">
+                    <button class="slick-left">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button class="slick-right">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="new-arrivals-cards responsive">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="assets/imgs/cards/brushed-cotton-duvet-cover_bone_lightbox_15608 1.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Brushed Cotton Duvet Cover</h3>
+                        <div class="rate">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star (1).svg">
+                            <img src="assets/icons-/star (1).svg">
+                            <div class="rate-caption">
+                                <p class="caption">
+                                    <span>5</span>
+                                     on 
+                                    <span>22</span>
+                                    reviwes
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="price">
+                                <p>
+                                    $170.00
+                                </p>
+                                <span>
+                                    $200.00
+                                </span>
+                            </div>
+                            <div class="cart-icon">
+                                <img src="assets/icons-/Frame.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="assets/imgs/cards/linen-euro-sham_wave_lightbox_ 1.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Brushed Cotton Duvet Cover</h3>
+                        <div class="rate">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star (1).svg">
+                            <img src="assets/icons-/star (1).svg">
+                            <div class="rate-caption">
+                                <p class="caption">
+                                    <span>5</span>
+                                     on 
+                                    <span>22</span>
+                                    reviwes
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="price">
+                                <p>
+                                    $170.00
+                                </p>
+                                <span>
+                                    $200.00
+                                </span>
+                            </div>
+                            <div class="cart-icon">
+                                <img src="assets/icons-/Frame.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="assets/imgs/cards/275511044_3426685490788962_1008602672280075216_n 1.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Brushed Cotton Duvet Cover</h3>
+                        <div class="rate">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star (1).svg">
+                            <img src="assets/icons-/star (1).svg">
+                            <div class="rate-caption">
+                                <p class="caption">
+                                    <span>5</span>
+                                     on 
+                                    <span>22</span>
+                                    reviwes
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="price">
+                                <p>
+                                    $170.00
+                                </p>
+                                <span>
+                                    $200.00
+                                </span>
+                            </div>
+                            <div class="cart-icon active">
+                                <img src="assets/icons-/Frame.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="assets/imgs/cards/brushed-cotton-venice-set_bone_lightbox_15632 2.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Brushed Cotton Duvet Cover</h3>
+                        <div class="rate">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star (1).svg">
+                            <img src="assets/icons-/star (1).svg">
+                            <div class="rate-caption">
+                                <p class="caption">
+                                    <span>5</span>
+                                     on 
+                                    <span>22</span>
+                                    reviwes
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="price">
+                                <p>
+                                    $170.00
+                                </p>
+                                <span>
+                                    $200.00
+                                </span>
+                            </div>
+                            <div class="cart-icon">
+                                <img src="assets/icons-/Frame.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="assets/imgs/cards/linen-venice-set_melon_lightbox_7914 1.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Brushed Cotton Duvet Cover</h3>
+                        <div class="rate">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star.svg" class="checked">
+                            <img src="assets/icons-/star (1).svg">
+                            <img src="assets/icons-/star (1).svg">
+                            <div class="rate-caption">
+                                <p class="caption">
+                                    <span>5</span>
+                                     on 
+                                    <span>22</span>
+                                    reviwes
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="price">
+                                <p>
+                                    $170.00
+                                </p>
+                                <span>
+                                    $200.00
+                                </span>
+                            </div>
+                            <div class="cart-icon">
+                                <img src="assets/icons-/Frame.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learn-more">
+            <div class="learn-more-icons">
+                <div class="i-1">
+                    <img src="assets/icons-/learn-more/IMAGE.svg" alt="">
+                    <p>Climate + Earth</p>
+                </div>
+                <div class="i-2">
+                    <img src="assets/icons-/learn-more/IMAGE (1).svg" alt="">
+                    <p>Responsible Materials</p>
+                </div>
+                <div class="i-3">
+                    <img src="assets/icons-/learn-more/IMAGE (2).svg" alt="">
+                    <p>Diversity, Equity + Inclusion</p>
+                </div>
+                <div class="i-4">
+                    <img src="assets/icons-/learn-more/IMAGE (3).svg" alt="">
+                    <p>Ethical Manufacturing</p>
+                </div>
+            </div>
+            <a href="#">learn more <span><i class="fa fa-arrow-right"></i></span></a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <div class="fir-items">
+                <p>
+                    Parachute® is a registered trademark of Parachute Home Inc. in the US and certain other jurisdictions.
+                </p>                
+                <h4>follow us</h4>
+                <br>
+                <a href="#">@parachutehome</a>
+                <br>
+                <div class="social-media-icons">
+                    <a href="#"><i class="fa fa-instagram insta"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p pinter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>                
+            </div>
+            <div class="sec-items">
+                <ul class="list-items" id="help">
+                    <li class="head">help</li>
+                    <li class="body">
+                        <ul class="items">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Track Your Order</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Care</a></li>
+                            <li><a href="#">Do Not Sell My Personal Information</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="thr-items">
+                <ul class="list-items" id="company">
+                    <li class="head">Company</li>
+                    <li class="body">
+                        <ul class="items">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Mentorship Program</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Trade</a></li>
+                            <li><a href="#">Hospitality</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Brand Ambassador</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="for-items">
+                <ul class="list-items" id="shop">
+                    <li class="head">Shop</li>
+                    <li class="body">
+                        <ul class="items">
+                            <li><a href="#">Digital Gift Card</a></li>
+                            <li><a href="#">Swatches</a></li>
+                            <li><a href="#">Stores</a></li>
+                            <li><a href="#">Design Services</a></li>
+                            <li><a href="#">The Instagram Shop</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last-footer">
+            <p>© Copyrights</p>
+            <p>2023</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/54f6ec82d3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/slick.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
